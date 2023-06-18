@@ -1,3 +1,3 @@
 ﻿using Blog.Data;
 
-var ctx = new BlogDataContext();
+using var ctx = new BlogDataContext();
