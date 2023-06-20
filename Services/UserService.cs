@@ -6,7 +6,7 @@ namespace Blog.Services
     {
         public static User Create()
         {
-            return new User()
+            return new User
             {
                 Name = "Isabel Cristina",
                 Slug = "isabelcristina",
