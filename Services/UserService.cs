@@ -8,9 +8,9 @@ namespace Blog.Services
         {
             return new User
             {
-                Name = "Isabel Cristina",
-                Slug = "isabelcristina",
-                Email = "isabel@cristina.com",
+                Name = "Elves Brito",
+                Slug = "elvesbrito",
+                Email = "elves@brito.com",
                 Bio = "2x Microsoft MVP",
                 Image = "https://elves.io",
                 PasswordHash = "123098457",

@@ -15,7 +15,8 @@ namespace Blog.Services
                 Summary = "Nesse artigo vamos aprender EF Core",
                 Title = "Começando com EF Core",
                 CreateDate = DateTime.Now,
-                LastUpdateDate = DateTime.Now,
+                //LastUpdateDate = DateTime.Now,
+                // Tags = null
             };
             return post;
         }

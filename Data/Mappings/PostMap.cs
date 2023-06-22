@@ -8,7 +8,7 @@ namespace Blog.Data.Mappings
     {
         public void Configure(EntityTypeBuilder<Post> builder)
         {
-            builder.ToTable("User");
+            builder.ToTable("Post");
             builder.HasKey(p => p.Id);
             builder.Property(p => p.Id)
                 .ValueGeneratedOnAdd()
@@ -54,16 +54,6 @@ namespace Blog.Data.Mappings
                 .IsUnique();
 
             // Relations
-            builder.HasOne(p => p.Author)
-                .WithMany(p => p.Posts)
-                .HasConstraintName("FK_Post_Author")
-                .OnDelete(DeleteBehavior.Cascade);
-
-            builder.HasOne(p => p.Category)
-                .WithMany(p => p.Posts)
-                .HasConstraintName("FK_Post_Category")
-                .OnDelete(DeleteBehavior.Cascade);
-
             builder.HasMany(p => p.Tags)
                 .WithMany(p => p.Posts)
                 .UsingEntity<Dictionary<string, object>>(
