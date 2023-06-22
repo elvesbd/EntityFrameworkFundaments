@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/ebd/ebd/baltaio/BackEndCourse/EntityFrameworkFundaments/Blog/Blog.csproj": {}
+    "/home/ebd/ebd/baltaio/BackEndCourse/EntityFrameworkFundaments/EntityFrameworkFundaments/Blog.csproj": {}
   },
   "projects": {
-    "/home/ebd/ebd/baltaio/BackEndCourse/EntityFrameworkFundaments/Blog/Blog.csproj": {
+    "/home/ebd/ebd/baltaio/BackEndCourse/EntityFrameworkFundaments/EntityFrameworkFundaments/Blog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ebd/ebd/baltaio/BackEndCourse/EntityFrameworkFundaments/Blog/Blog.csproj",
+        "projectUniqueName": "/home/ebd/ebd/baltaio/BackEndCourse/EntityFrameworkFundaments/EntityFrameworkFundaments/Blog.csproj",
         "projectName": "Blog",
-        "projectPath": "/home/ebd/ebd/baltaio/BackEndCourse/EntityFrameworkFundaments/Blog/Blog.csproj",
+        "projectPath": "/home/ebd/ebd/baltaio/BackEndCourse/EntityFrameworkFundaments/EntityFrameworkFundaments/Blog.csproj",
         "packagesPath": "/home/ebd/.nuget/packages/",
-        "outputPath": "/home/ebd/ebd/baltaio/BackEndCourse/EntityFrameworkFundaments/Blog/obj/",
+        "outputPath": "/home/ebd/ebd/baltaio/BackEndCourse/EntityFrameworkFundaments/EntityFrameworkFundaments/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/ebd/.nuget/NuGet/NuGet.Config"

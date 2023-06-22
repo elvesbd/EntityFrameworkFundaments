@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e7mUYcqiloZ+efW9QBvo2WEsoLiRyMgWHRhyTGVIzMNYVrKXEl9Tfi0M+xkTG8k85/Hgw8DH4M7qArjwKejsFg==",
+  "dgSpecHash": "vmbeS8QwSziV16RPgINbCKUQxTVA4fvCgkQ7qFaz+M4QN0+Rgpm3eq9uHYSEr8cCQ837K0+HY1xr7Q5p/JASvQ==",
   "success": true,
-  "projectFilePath": "/home/ebd/ebd/baltaio/BackEndCourse/EntityFrameworkFundaments/Blog/Blog.csproj",
+  "projectFilePath": "/home/ebd/ebd/baltaio/BackEndCourse/EntityFrameworkFundaments/EntityFrameworkFundaments/Blog.csproj",
   "expectedPackageFiles": [
     "/home/ebd/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/home/ebd/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
