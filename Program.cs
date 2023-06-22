@@ -29,14 +29,16 @@ foreach (var post in posts)
     Console.WriteLine($"{post.Title} escrito por {post.Author?.Name} em {post.Category?.Name}");
 } */
 
-var post = ctx
-    .Posts?
-    // .AsNoTracking PRECISA DO TRACKING
-    .Include(x => x.Author)
-    .Include(x => x.Category)
-    .OrderBy(x => x.LastUpdateDate)
-    .FirstOrDefault(); // Pegando o primeiro item
+/* var user = UserService.Create();
+ctx.Users.Add(user);
+ctx.SaveChanges(); */
 
-post.Author.Name = "Test";
+var user = ctx.Users.FirstOrDefault();
+var category = CategoryService.Create();
+
+var post = PostService.Create(user, category);
 ctx.Posts.Add(post);
 ctx.SaveChanges();
+
+
+

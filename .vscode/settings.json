@@ -1,4 +1,12 @@
 {
   "dotnet.defaultSolution": "Blog.sln",
-  "cSpell.words": ["comecando", "DATETIME", "dotnet", "elvesbrito", "NVARCHAR"]
+  "cSpell.words": [
+    "comecando",
+    "DATETIME",
+    "dotnet",
+    "elvesbrito",
+    "GETDATE",
+    "NVARCHAR",
+    "SMALLDATETIME"
+  ]
 }
