@@ -6,20 +6,34 @@ using Microsoft.EntityFrameworkCore;
 
 internal class Program
 {
-    private static async Task Main(string[] args)
+    private static void Main(string[] args)
     {
         using var ctx = new BlogDataContext();
-
-        var post = await ctx.Posts.ToListAsync();
-        var users = await ctx.Users.ToListAsync();
-
-        var posts = await GetPosts(ctx);
+        var posts = GetPosts(ctx, 0, 25);
 
         Console.WriteLine("");
     }
 
-    public static async Task<IEnumerable<Post>> GetPosts(BlogDataContext ctx)
+    /*  public static List<Post> GetPosts(BlogDataContext ctx, int skip = 0, int take = 25)
+     {
+         var posts = ctx
+             .Posts
+             .AsNoTracking()
+             .Skip(skip)
+             .Take(take)
+             .ToList();
+         return posts;
+     } */
+
+    public static List<Post> GetPosts(BlogDataContext ctx, int skip = 0, int take = 25)
     {
-        return await ctx.Posts.ToListAsync();
+        var posts = ctx
+            .PostWithTagsCount
+            .ToList();
+        foreach (var item in posts)
+        {
+            Console.WriteLine(item.Name);
+        }
+        return posts;
     }
 }
