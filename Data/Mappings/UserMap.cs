@@ -31,12 +31,6 @@ namespace Blog.Data.Mappings
                 .HasColumnType("VARCHAR")
                 .HasMaxLength(255);
 
-            builder.Property("GitHub")
-                .IsRequired()
-                .HasColumnName("GitHub")
-                .HasColumnType("NVARCHAR")
-                .HasMaxLength(80);
-
             builder.Property("Image")
                 .IsRequired()
                 .HasColumnName("Image")

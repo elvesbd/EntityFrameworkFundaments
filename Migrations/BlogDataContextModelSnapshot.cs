@@ -78,7 +78,7 @@ namespace Blog.Migrations
                     b.Property<DateTime>("LastUpdateDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("SMALLDATETIME")
-                        .HasDefaultValue(new DateTime(2023, 6, 26, 19, 18, 0, 421, DateTimeKind.Utc).AddTicks(4950))
+                        .HasDefaultValue(new DateTime(2023, 6, 26, 19, 26, 34, 109, DateTimeKind.Utc).AddTicks(1966))
                         .HasColumnName("LastUpdateDate");
 
                     b.Property<string>("Slug")
@@ -167,12 +167,6 @@ namespace Blog.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("VARCHAR")
                         .HasColumnName("Email");
-
-                    b.Property<string>("GitHub")
-                        .IsRequired()
-                        .HasMaxLength(80)
-                        .HasColumnType("NVARCHAR")
-                        .HasColumnName("GitHub");
 
                     b.Property<string>("Image")
                         .IsRequired()
