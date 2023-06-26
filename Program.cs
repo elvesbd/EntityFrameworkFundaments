@@ -4,8 +4,22 @@ using Blog.Models;
 using Blog.Services;
 using Microsoft.EntityFrameworkCore;
 
-using var ctx = new BlogDataContext();
+internal class Program
+{
+    private static async Task Main(string[] args)
+    {
+        using var ctx = new BlogDataContext();
 
-var user = UserService.Create();
-ctx.Users?.Add(user);
-ctx.SaveChanges();
+        var post = await ctx.Posts.ToListAsync();
+        var users = await ctx.Users.ToListAsync();
+
+        var posts = await GetPosts(ctx);
+
+        Console.WriteLine("");
+    }
+
+    public static async Task<IEnumerable<Post>> GetPosts(BlogDataContext ctx)
+    {
+        return await ctx.Posts.ToListAsync();
+    }
+}
