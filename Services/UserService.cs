@@ -14,6 +14,7 @@ namespace Blog.Services
                 Bio = "2x Microsoft MVP",
                 Image = "https://elves.io",
                 PasswordHash = "123098457",
+                GitHub = "https://github.com/elvesbd"
             };
         }
     }
